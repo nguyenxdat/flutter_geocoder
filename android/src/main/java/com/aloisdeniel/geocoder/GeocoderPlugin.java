@@ -20,7 +20,7 @@ import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
+//import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /**
  * NotAvailableException
@@ -43,14 +43,14 @@ public class GeocoderPlugin implements FlutterPlugin, MethodChannel.MethodCallHa
     public GeocoderPlugin() {
     }
 
-    /**
-     * Plugin registration.
-     */
-    @SuppressWarnings("deprecation")
-    public static void registerWith(Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), "github.com/aloisdeniel/geocoder");
-        channel.setMethodCallHandler(new GeocoderPlugin());
-    }
+//    /**
+//     * Plugin registration.
+//     */
+//    @SuppressWarnings("deprecation")
+//    public static void registerWith(Registrar registrar) {
+//        final MethodChannel channel = new MethodChannel(registrar.messenger(), "github.com/aloisdeniel/geocoder");
+//        channel.setMethodCallHandler(new GeocoderPlugin());
+//    }
 
     @Override
     public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
